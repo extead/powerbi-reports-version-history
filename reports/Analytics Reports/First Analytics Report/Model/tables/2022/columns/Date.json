@@ -1,0 +1,28 @@
+{
+  "name": "Date",
+  "dataType": "dateTime",
+  "sourceColumn": "Date",
+  "formatString": "Long Date",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Изменение",
+      "relationship": "03137f9d-180a-4745-9b34-3e5ee8decd5f",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_438f8db0-0e7e-4b5e-8ad3-3f4cd76a7f38",
+        "hierarchy": "Иерархия дат"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

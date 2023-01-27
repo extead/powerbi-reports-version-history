@@ -1,0 +1,12 @@
+{
+  "name": "PricingType",
+  "dataType": "string",
+  "sourceColumn": "PricingType",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

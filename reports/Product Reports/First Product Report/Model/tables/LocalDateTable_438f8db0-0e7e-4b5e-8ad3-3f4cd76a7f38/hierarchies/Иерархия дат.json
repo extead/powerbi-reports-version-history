@@ -1,0 +1,31 @@
+{
+  "name": "Иерархия дат",
+  "levels": [
+    {
+      "name": "Год",
+      "ordinal": 0,
+      "column": "Год"
+    },
+    {
+      "name": "Квартал",
+      "ordinal": 1,
+      "column": "Квартал"
+    },
+    {
+      "name": "Месяц",
+      "ordinal": 2,
+      "column": "Месяц"
+    },
+    {
+      "name": "День",
+      "ordinal": 3,
+      "column": "День"
+    }
+  ],
+  "annotations": [
+    {
+      "name": "TemplateId",
+      "value": "DateHierarchy"
+    }
+  ]
+}
