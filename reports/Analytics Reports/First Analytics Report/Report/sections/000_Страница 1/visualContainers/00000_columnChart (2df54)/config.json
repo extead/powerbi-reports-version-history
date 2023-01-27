@@ -4,16 +4,16 @@
     {
       "id": 0,
       "position": {
-        "x": 580.66869300911856,
+        "x": 702.24924012158056,
         "y": 0,
-        "z": 1,
+        "z": 1000,
         "width": 569.96960486322189,
-        "height": 378.35866261398178
+        "height": 719.75683890577511
       }
     }
   ],
   "singleVisual": {
-    "visualType": "pieChart",
+    "visualType": "columnChart",
     "projections": {
       "Category": [
         {
@@ -22,14 +22,6 @@
         },
         {
           "queryRef": "2022.Date.Изменение.Иерархия дат.Квартал",
-          "active": true
-        },
-        {
-          "queryRef": "2022.Date.Изменение.Иерархия дат.Месяц",
-          "active": true
-        },
-        {
-          "queryRef": "2022.Date.Изменение.Иерархия дат.День",
           "active": true
         }
       ],
@@ -77,72 +69,6 @@
           "Name": "2022.Date.Изменение.Иерархия дат.Год"
         },
         {
-          "HierarchyLevel": {
-            "Expression": {
-              "Hierarchy": {
-                "Expression": {
-                  "PropertyVariationSource": {
-                    "Expression": {
-                      "SourceRef": {
-                        "Source": "2"
-                      }
-                    },
-                    "Name": "Изменение",
-                    "Property": "Date"
-                  }
-                },
-                "Hierarchy": "Иерархия дат"
-              }
-            },
-            "Level": "Квартал"
-          },
-          "Name": "2022.Date.Изменение.Иерархия дат.Квартал"
-        },
-        {
-          "HierarchyLevel": {
-            "Expression": {
-              "Hierarchy": {
-                "Expression": {
-                  "PropertyVariationSource": {
-                    "Expression": {
-                      "SourceRef": {
-                        "Source": "2"
-                      }
-                    },
-                    "Name": "Изменение",
-                    "Property": "Date"
-                  }
-                },
-                "Hierarchy": "Иерархия дат"
-              }
-            },
-            "Level": "Месяц"
-          },
-          "Name": "2022.Date.Изменение.Иерархия дат.Месяц"
-        },
-        {
-          "HierarchyLevel": {
-            "Expression": {
-              "Hierarchy": {
-                "Expression": {
-                  "PropertyVariationSource": {
-                    "Expression": {
-                      "SourceRef": {
-                        "Source": "2"
-                      }
-                    },
-                    "Name": "Изменение",
-                    "Property": "Date"
-                  }
-                },
-                "Hierarchy": "Иерархия дат"
-              }
-            },
-            "Level": "День"
-          },
-          "Name": "2022.Date.Изменение.Иерархия дат.День"
-        },
-        {
           "Aggregation": {
             "Expression": {
               "Column": {
@@ -168,6 +94,28 @@
             "Property": "PricingType"
           },
           "Name": "2022.PricingType"
+        },
+        {
+          "HierarchyLevel": {
+            "Expression": {
+              "Hierarchy": {
+                "Expression": {
+                  "PropertyVariationSource": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Source": "2"
+                      }
+                    },
+                    "Name": "Изменение",
+                    "Property": "Date"
+                  }
+                },
+                "Hierarchy": "Иерархия дат"
+              }
+            },
+            "Level": "Квартал"
+          },
+          "Name": "2022.Date.Изменение.Иерархия дат.Квартал"
         }
       ]
     },

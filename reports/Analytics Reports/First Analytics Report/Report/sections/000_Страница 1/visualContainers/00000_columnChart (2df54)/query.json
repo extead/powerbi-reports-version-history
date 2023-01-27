@@ -35,72 +35,6 @@
               "Name": "2022.Date.Изменение.Иерархия дат.Год"
             },
             {
-              "HierarchyLevel": {
-                "Expression": {
-                  "Hierarchy": {
-                    "Expression": {
-                      "PropertyVariationSource": {
-                        "Expression": {
-                          "SourceRef": {
-                            "Source": "2"
-                          }
-                        },
-                        "Name": "Изменение",
-                        "Property": "Date"
-                      }
-                    },
-                    "Hierarchy": "Иерархия дат"
-                  }
-                },
-                "Level": "Квартал"
-              },
-              "Name": "2022.Date.Изменение.Иерархия дат.Квартал"
-            },
-            {
-              "HierarchyLevel": {
-                "Expression": {
-                  "Hierarchy": {
-                    "Expression": {
-                      "PropertyVariationSource": {
-                        "Expression": {
-                          "SourceRef": {
-                            "Source": "2"
-                          }
-                        },
-                        "Name": "Изменение",
-                        "Property": "Date"
-                      }
-                    },
-                    "Hierarchy": "Иерархия дат"
-                  }
-                },
-                "Level": "Месяц"
-              },
-              "Name": "2022.Date.Изменение.Иерархия дат.Месяц"
-            },
-            {
-              "HierarchyLevel": {
-                "Expression": {
-                  "Hierarchy": {
-                    "Expression": {
-                      "PropertyVariationSource": {
-                        "Expression": {
-                          "SourceRef": {
-                            "Source": "2"
-                          }
-                        },
-                        "Name": "Изменение",
-                        "Property": "Date"
-                      }
-                    },
-                    "Hierarchy": "Иерархия дат"
-                  }
-                },
-                "Level": "День"
-              },
-              "Name": "2022.Date.Изменение.Иерархия дат.День"
-            },
-            {
               "Aggregation": {
                 "Expression": {
                   "Column": {
@@ -126,6 +60,78 @@
                 "Property": "PricingType"
               },
               "Name": "2022.PricingType"
+            },
+            {
+              "HierarchyLevel": {
+                "Expression": {
+                  "Hierarchy": {
+                    "Expression": {
+                      "PropertyVariationSource": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "2"
+                          }
+                        },
+                        "Name": "Изменение",
+                        "Property": "Date"
+                      }
+                    },
+                    "Hierarchy": "Иерархия дат"
+                  }
+                },
+                "Level": "Квартал"
+              },
+              "Name": "2022.Date.Изменение.Иерархия дат.Квартал"
+            }
+          ],
+          "OrderBy": [
+            {
+              "Direction": 1,
+              "Expression": {
+                "HierarchyLevel": {
+                  "Expression": {
+                    "Hierarchy": {
+                      "Expression": {
+                        "PropertyVariationSource": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "2"
+                            }
+                          },
+                          "Name": "Изменение",
+                          "Property": "Date"
+                        }
+                      },
+                      "Hierarchy": "Иерархия дат"
+                    }
+                  },
+                  "Level": "Год"
+                }
+              }
+            },
+            {
+              "Direction": 1,
+              "Expression": {
+                "HierarchyLevel": {
+                  "Expression": {
+                    "Hierarchy": {
+                      "Expression": {
+                        "PropertyVariationSource": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "2"
+                            }
+                          },
+                          "Name": "Изменение",
+                          "Property": "Date"
+                        }
+                      },
+                      "Hierarchy": "Иерархия дат"
+                    }
+                  },
+                  "Level": "Квартал"
+                }
+              }
             }
           ]
         },
@@ -136,9 +142,7 @@
                 "Projections": [
                   0,
                   1,
-                  2,
-                  3,
-                  4
+                  3
                 ]
               }
             ]
@@ -147,18 +151,22 @@
             "Groupings": [
               {
                 "Projections": [
-                  5
+                  2
                 ]
               }
             ]
           },
           "DataReduction": {
-            "DataVolume": 3,
+            "DataVolume": 4,
             "Primary": {
-              "Top": {}
+              "Window": {
+                "Count": 200
+              }
             },
             "Secondary": {
-              "Top": {}
+              "Top": {
+                "Count": 60
+              }
             }
           },
           "Version": 1
