@@ -1,0 +1,20 @@
+{
+  "type": "calculated",
+  "name": "Квартал",
+  "dataType": "string",
+  "isDataTypeInferred": true,
+  "isHidden": true,
+  "sortByColumn": "№Квартала",
+  "dataCategory": "Quarters",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "User"
+    },
+    {
+      "name": "TemplateId",
+      "value": "Quarter"
+    }
+  ]
+}

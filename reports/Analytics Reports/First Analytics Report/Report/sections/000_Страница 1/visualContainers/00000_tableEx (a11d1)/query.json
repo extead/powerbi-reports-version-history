@@ -1,0 +1,162 @@
+{
+  "Commands": [
+    {
+      "SemanticQueryDataShapeCommand": {
+        "Query": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "2",
+              "Entity": "2022",
+              "Type": 0
+            }
+          ],
+          "Select": [
+            {
+              "HierarchyLevel": {
+                "Expression": {
+                  "Hierarchy": {
+                    "Expression": {
+                      "PropertyVariationSource": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "2"
+                          }
+                        },
+                        "Name": "Изменение",
+                        "Property": "Date"
+                      }
+                    },
+                    "Hierarchy": "Иерархия дат"
+                  }
+                },
+                "Level": "Год"
+              },
+              "Name": "2022.Date.Изменение.Иерархия дат.Год"
+            },
+            {
+              "HierarchyLevel": {
+                "Expression": {
+                  "Hierarchy": {
+                    "Expression": {
+                      "PropertyVariationSource": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "2"
+                          }
+                        },
+                        "Name": "Изменение",
+                        "Property": "Date"
+                      }
+                    },
+                    "Hierarchy": "Иерархия дат"
+                  }
+                },
+                "Level": "Квартал"
+              },
+              "Name": "2022.Date.Изменение.Иерархия дат.Квартал"
+            },
+            {
+              "HierarchyLevel": {
+                "Expression": {
+                  "Hierarchy": {
+                    "Expression": {
+                      "PropertyVariationSource": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "2"
+                          }
+                        },
+                        "Name": "Изменение",
+                        "Property": "Date"
+                      }
+                    },
+                    "Hierarchy": "Иерархия дат"
+                  }
+                },
+                "Level": "Месяц"
+              },
+              "Name": "2022.Date.Изменение.Иерархия дат.Месяц"
+            },
+            {
+              "HierarchyLevel": {
+                "Expression": {
+                  "Hierarchy": {
+                    "Expression": {
+                      "PropertyVariationSource": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "2"
+                          }
+                        },
+                        "Name": "Изменение",
+                        "Property": "Date"
+                      }
+                    },
+                    "Hierarchy": "Иерархия дат"
+                  }
+                },
+                "Level": "День"
+              },
+              "Name": "2022.Date.Изменение.Иерархия дат.День"
+            },
+            {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Source": "2"
+                      }
+                    },
+                    "Property": "Upvotes"
+                  }
+                },
+                "Function": 0
+              },
+              "Name": "Sum(2022.Upvotes)"
+            },
+            {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "2"
+                  }
+                },
+                "Property": "PricingType"
+              },
+              "Name": "2022.PricingType"
+            }
+          ]
+        },
+        "Binding": {
+          "Primary": {
+            "Groupings": [
+              {
+                "Projections": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ],
+                "Subtotal": 1
+              }
+            ]
+          },
+          "DataReduction": {
+            "DataVolume": 3,
+            "Primary": {
+              "Window": {
+                "Count": 500
+              }
+            }
+          },
+          "Version": 1
+        },
+        "ExecutionMetricsKind": 1
+      }
+    }
+  ]
+}

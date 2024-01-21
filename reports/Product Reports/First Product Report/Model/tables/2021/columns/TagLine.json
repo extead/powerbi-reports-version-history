@@ -1,0 +1,12 @@
+{
+  "name": "TagLine",
+  "dataType": "string",
+  "sourceColumn": "TagLine",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

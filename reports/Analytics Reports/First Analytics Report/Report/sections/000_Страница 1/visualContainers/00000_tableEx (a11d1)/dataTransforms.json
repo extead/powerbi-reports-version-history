@@ -1,0 +1,392 @@
+{
+  "projectionOrdering": {
+    "Values": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "queryMetadata": {
+    "Select": [
+      {
+        "Restatement": "Год",
+        "Name": "2022.Date.Изменение.Иерархия дат.Год",
+        "Type": 3,
+        "Format": "0"
+      },
+      {
+        "Restatement": "Квартал",
+        "Name": "2022.Date.Изменение.Иерархия дат.Квартал",
+        "Type": 2048
+      },
+      {
+        "Restatement": "Месяц",
+        "Name": "2022.Date.Изменение.Иерархия дат.Месяц",
+        "Type": 2048
+      },
+      {
+        "Restatement": "День",
+        "Name": "2022.Date.Изменение.Иерархия дат.День",
+        "Type": 3,
+        "Format": "0"
+      },
+      {
+        "Restatement": "Сумма Upvotes",
+        "Name": "Sum(2022.Upvotes)",
+        "Type": 1
+      },
+      {
+        "Restatement": "PricingType",
+        "Name": "2022.PricingType",
+        "Type": 2048
+      }
+    ],
+    "Filters": [
+      {
+        "type": 2,
+        "expression": {
+          "HierarchyLevel": {
+            "Expression": {
+              "Hierarchy": {
+                "Expression": {
+                  "PropertyVariationSource": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "2022"
+                      }
+                    },
+                    "Name": "Изменение",
+                    "Property": "Date"
+                  }
+                },
+                "Hierarchy": "Иерархия дат"
+              }
+            },
+            "Level": "Год"
+          }
+        }
+      },
+      {
+        "type": 0,
+        "expression": {
+          "HierarchyLevel": {
+            "Expression": {
+              "Hierarchy": {
+                "Expression": {
+                  "PropertyVariationSource": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "2022"
+                      }
+                    },
+                    "Name": "Изменение",
+                    "Property": "Date"
+                  }
+                },
+                "Hierarchy": "Иерархия дат"
+              }
+            },
+            "Level": "Квартал"
+          }
+        }
+      },
+      {
+        "type": 0,
+        "expression": {
+          "HierarchyLevel": {
+            "Expression": {
+              "Hierarchy": {
+                "Expression": {
+                  "PropertyVariationSource": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "2022"
+                      }
+                    },
+                    "Name": "Изменение",
+                    "Property": "Date"
+                  }
+                },
+                "Hierarchy": "Иерархия дат"
+              }
+            },
+            "Level": "Месяц"
+          }
+        }
+      },
+      {
+        "type": 2,
+        "expression": {
+          "HierarchyLevel": {
+            "Expression": {
+              "Hierarchy": {
+                "Expression": {
+                  "PropertyVariationSource": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "2022"
+                      }
+                    },
+                    "Name": "Изменение",
+                    "Property": "Date"
+                  }
+                },
+                "Hierarchy": "Иерархия дат"
+              }
+            },
+            "Level": "День"
+          }
+        }
+      },
+      {
+        "type": 2,
+        "expression": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "2022"
+                  }
+                },
+                "Property": "Upvotes"
+              }
+            },
+            "Function": 0
+          }
+        }
+      },
+      {
+        "type": 0,
+        "expression": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "2022"
+              }
+            },
+            "Property": "PricingType"
+          }
+        }
+      }
+    ]
+  },
+  "visualElements": [
+    {
+      "DataRoles": [
+        {
+          "Name": "Values",
+          "Projection": 0,
+          "isActive": false
+        },
+        {
+          "Name": "Values",
+          "Projection": 1,
+          "isActive": false
+        },
+        {
+          "Name": "Values",
+          "Projection": 2,
+          "isActive": false
+        },
+        {
+          "Name": "Values",
+          "Projection": 3,
+          "isActive": false
+        },
+        {
+          "Name": "Values",
+          "Projection": 4,
+          "isActive": false
+        },
+        {
+          "Name": "Values",
+          "Projection": 5,
+          "isActive": false
+        }
+      ]
+    }
+  ],
+  "selects": [
+    {
+      "displayName": "Год",
+      "format": "0",
+      "queryName": "2022.Date.Изменение.Иерархия дат.Год",
+      "roles": {
+        "Values": true
+      },
+      "type": {
+        "category": "Years",
+        "underlyingType": 66308
+      },
+      "expr": {
+        "HierarchyLevel": {
+          "Expression": {
+            "Hierarchy": {
+              "Expression": {
+                "PropertyVariationSource": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "2022"
+                    }
+                  },
+                  "Name": "Изменение",
+                  "Property": "Date"
+                }
+              },
+              "Hierarchy": "Иерархия дат"
+            }
+          },
+          "Level": "Год"
+        }
+      }
+    },
+    {
+      "displayName": "Квартал",
+      "queryName": "2022.Date.Изменение.Иерархия дат.Квартал",
+      "roles": {
+        "Values": true
+      },
+      "type": {
+        "category": "Quarters",
+        "underlyingType": 262657
+      },
+      "expr": {
+        "HierarchyLevel": {
+          "Expression": {
+            "Hierarchy": {
+              "Expression": {
+                "PropertyVariationSource": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "2022"
+                    }
+                  },
+                  "Name": "Изменение",
+                  "Property": "Date"
+                }
+              },
+              "Hierarchy": "Иерархия дат"
+            }
+          },
+          "Level": "Квартал"
+        }
+      }
+    },
+    {
+      "displayName": "Месяц",
+      "queryName": "2022.Date.Изменение.Иерархия дат.Месяц",
+      "roles": {
+        "Values": true
+      },
+      "type": {
+        "category": "Months",
+        "underlyingType": 131585
+      },
+      "expr": {
+        "HierarchyLevel": {
+          "Expression": {
+            "Hierarchy": {
+              "Expression": {
+                "PropertyVariationSource": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "2022"
+                    }
+                  },
+                  "Name": "Изменение",
+                  "Property": "Date"
+                }
+              },
+              "Hierarchy": "Иерархия дат"
+            }
+          },
+          "Level": "Месяц"
+        }
+      }
+    },
+    {
+      "displayName": "День",
+      "format": "0",
+      "queryName": "2022.Date.Изменение.Иерархия дат.День",
+      "roles": {
+        "Values": true
+      },
+      "type": {
+        "category": "DayOfMonth",
+        "underlyingType": 328452
+      },
+      "expr": {
+        "HierarchyLevel": {
+          "Expression": {
+            "Hierarchy": {
+              "Expression": {
+                "PropertyVariationSource": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "2022"
+                    }
+                  },
+                  "Name": "Изменение",
+                  "Property": "Date"
+                }
+              },
+              "Hierarchy": "Иерархия дат"
+            }
+          },
+          "Level": "День"
+        }
+      }
+    },
+    {
+      "displayName": "Сумма Upvotes",
+      "queryName": "Sum(2022.Upvotes)",
+      "roles": {
+        "Values": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 259
+      },
+      "expr": {
+        "Aggregation": {
+          "Expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "2022"
+                }
+              },
+              "Property": "Upvotes"
+            }
+          },
+          "Function": 0
+        }
+      }
+    },
+    {
+      "displayName": "PricingType",
+      "queryName": "2022.PricingType",
+      "roles": {
+        "Values": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "2022"
+            }
+          },
+          "Property": "PricingType"
+        }
+      }
+    }
+  ]
+}

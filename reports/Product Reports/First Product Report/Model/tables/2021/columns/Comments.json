@@ -1,0 +1,13 @@
+{
+  "name": "Comments",
+  "dataType": "int64",
+  "sourceColumn": "Comments",
+  "formatString": "0",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

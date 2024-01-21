@@ -1,0 +1,16 @@
+{
+  "name": "Upvotes",
+  "dataType": "double",
+  "sourceColumn": "Upvotes",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

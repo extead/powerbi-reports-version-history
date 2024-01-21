@@ -1,0 +1,12 @@
+{
+  "name": "ShortUrl",
+  "dataType": "string",
+  "sourceColumn": "ShortUrl",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

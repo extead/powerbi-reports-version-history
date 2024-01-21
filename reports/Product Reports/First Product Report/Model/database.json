@@ -1,0 +1,45 @@
+{
+  "name": "First Product Report",
+  "compatibilityLevel": 1550,
+  "model": {
+    "culture": "ru-RU",
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "sourceQueryCulture": "ru-RU",
+    "relationships": [
+      {
+        "name": "03137f9d-180a-4745-9b34-3e5ee8decd5f",
+        "fromTable": "2022",
+        "fromColumn": "Date",
+        "toTable": "LocalDateTable_438f8db0-0e7e-4b5e-8ad3-3f4cd76a7f38",
+        "toColumn": "Date",
+        "joinOnDateBehavior": "datePartOnly"
+      },
+      {
+        "name": "af1258a4-83ca-47db-95d4-b4ddee745589",
+        "fromTable": "2021",
+        "fromColumn": "Date",
+        "toTable": "LocalDateTable_2fdffd82-5fbe-4a41-b6e3-46a03c7750d0",
+        "toColumn": "Date",
+        "joinOnDateBehavior": "datePartOnly"
+      }
+    ],
+    "annotations": [
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"2022\",\"2021\"]"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.112.1161.0 (22.12)"
+      }
+    ]
+  }
+}

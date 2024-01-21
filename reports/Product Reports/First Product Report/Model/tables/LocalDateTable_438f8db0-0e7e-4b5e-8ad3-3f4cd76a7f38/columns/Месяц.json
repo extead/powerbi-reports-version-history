@@ -1,0 +1,20 @@
+{
+  "type": "calculated",
+  "name": "Месяц",
+  "dataType": "string",
+  "isDataTypeInferred": true,
+  "isHidden": true,
+  "sortByColumn": "№Месяца",
+  "dataCategory": "Months",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "User"
+    },
+    {
+      "name": "TemplateId",
+      "value": "Month"
+    }
+  ]
+}

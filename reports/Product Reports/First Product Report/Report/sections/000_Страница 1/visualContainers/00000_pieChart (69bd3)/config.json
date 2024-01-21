@@ -1,0 +1,92 @@
+{
+  "name": "69bd387146e555850ab0",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 0,
+        "y": 500,
+        "width": 847,
+        "height": 220,
+        "z": 1
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "pieChart",
+    "projections": {
+      "Category": [
+        {
+          "queryRef": "2022.Topic",
+          "active": true
+        }
+      ],
+      "Y": [
+        {
+          "queryRef": "Sum(2022.Comments)"
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "2",
+          "Entity": "2022",
+          "Type": 0
+        }
+      ],
+      "Select": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "2"
+              }
+            },
+            "Property": "Topic"
+          },
+          "Name": "2022.Topic"
+        },
+        {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "2"
+                  }
+                },
+                "Property": "Comments"
+              }
+            },
+            "Function": 0
+          },
+          "Name": "Sum(2022.Comments)"
+        }
+      ],
+      "OrderBy": [
+        {
+          "Direction": 2,
+          "Expression": {
+            "Aggregation": {
+              "Expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Source": "2"
+                    }
+                  },
+                  "Property": "Comments"
+                }
+              },
+              "Function": 0
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "hasDefaultSort": true
+  }
+}
